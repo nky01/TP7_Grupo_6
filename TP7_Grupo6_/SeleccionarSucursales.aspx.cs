@@ -13,5 +13,21 @@ namespace TP7_Grupo6_
         {
 
         }
+
+        protected void btnSeleccionar_Click(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+            ListViewItem item = (ListViewItem)btn.NamingContainer;
+
+            string idSucursal = ((Label)item.FindControl("Id_SucursalLabel")).Text;
+            string nombre = ((Label)item.FindControl("NombreSucursalLabel")).Text;
+            string descripcion = ((Label)item.FindControl("DescripcionSucursalLabel")).Text;
+
+            Session["ID_SUCURSAL"] = idSucursal;
+            Session["NOMBRE"] = nombre;
+            Session["DESCRIPCION"] = descripcion;
+
+            lblMensaje.Text = "Sucursal seleccionada: ID: " + idSucursal + ", Nombre: " + nombre + ", Descripcion: " + descripcion;
+        }
     }
 }

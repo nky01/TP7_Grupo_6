@@ -10,18 +10,20 @@
 <body>
     <form id="form1" runat="server">
         <div>
-        </div>
-        <asp:ListView ID="ListView1" runat="server" DataKeyNames="Id_Sucursal" DataSourceID="SqlDataSource1" GroupItemCount="3">
+</div>
+        <asp:ListView ID="ListView1" runat="server" DataKeyNames="Id_Sucursal" DataSourceID="SqlDataSource1" GroupItemCount="3" style="height: 250px; width: 322px">
             <AlternatingItemTemplate>
-                <td runat="server" style="background-color:#FFF8DC;">&nbsp;<asp:Label ID="NombreSucursalLabel" runat="server" Text='<%# Eval("NombreSucursal") %>'></asp:Label>
+                <td runat="server" style="background-color:#FFF8DC;">
+                    <asp:Label ID="Id_SucursalLabel" runat="server" Text='<%# Eval("Id_Sucursal") %>' Visible="false" />
+                    <asp:Label ID="NombreSucursalLabel" runat="server" Text='<%# Eval("NombreSucursal") %>' />
                     <br />
                     <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl='<%# Eval("URL_Imagen_Sucursal") %>' />
                     <br />
                     <asp:Label ID="DescripcionSucursalLabel" runat="server" Text='<%# Eval("DescripcionSucursal") %>' />
                     <br />
+                    <asp:Button ID="seleccionarbtn" runat="server" Text="Seleccionar" OnClick="btnSeleccionar_Click" />
                     <br />
-                    <asp:Button ID="seleccionarbtn" runat="server" Text="Seleccionar" />
-                    <br /></td>
+                </td>
             </AlternatingItemTemplate>
             <EditItemTemplate>
                 <td runat="server" style="background-color:#008A8C;color: #FFFFFF;">Id_Sucursal:
@@ -68,12 +70,14 @@
             </InsertItemTemplate>
             <ItemTemplate>
                 <td runat="server" style="background-color:#DCDCDC;color: #000000;">
+                    <asp:Label ID="Id_SucursalLabel" runat="server" Text='<%# Eval("Id_Sucursal") %>' Visible="false" />
                     <asp:Label ID="NombreSucursalLabel" runat="server" Text='<%# Eval("NombreSucursal") %>' />
                     <br />
                     <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl='<%# Eval("URL_Imagen_Sucursal") %>' />
-                    <br />&nbsp;<asp:Label ID="DescripcionSucursalLabel" runat="server" Text='<%# Eval("DescripcionSucursal") %>' />
                     <br />
-                    <asp:Button ID="seleccionarbtn" runat="server" Text="Seleccionar" />
+                    <asp:Label ID="DescripcionSucursalLabel" runat="server" Text='<%# Eval("DescripcionSucursal") %>' />
+                    <br />
+                    <asp:Button ID="seleccionarbtn" runat="server" Text="Seleccionar" OnClick="btnSeleccionar_Click" />
                 </td>
             </ItemTemplate>
             <LayoutTemplate>
@@ -112,6 +116,8 @@
             </SelectedItemTemplate>
         </asp:ListView>
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConexionSucursales %>" SelectCommand="SELECT [Id_Sucursal], [NombreSucursal], [DescripcionSucursal], [URL_Imagen_Sucursal] FROM [Sucursal]"></asp:SqlDataSource>
+        <br />
+        <asp:Label ID="lblMensaje" runat="server" ForeColor="Green"></asp:Label>
     </form>
 </body>
 </html>
