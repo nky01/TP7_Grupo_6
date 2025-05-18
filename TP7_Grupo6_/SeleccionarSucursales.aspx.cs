@@ -29,5 +29,18 @@ namespace TP7_Grupo6_
 
             lblMensaje.Text = "Sucursal seleccionada: ID: " + idSucursal + ", Nombre: " + nombre + ", Descripcion: " + descripcion;
         }
+
+        protected void btnBuscar_Click(object sender, EventArgs e)
+        {
+            GestionSucursal gestion = new GestionSucursal();
+            if(txtBoxBuscar.Text.Trim() == string.Empty)
+            {
+                gestion.MostrarSucursales(SqlDataSource1);
+                ListView1.DataBind();
+                return;
+            }
+            gestion.BuscarSucursal(SqlDataSource1, txtBoxBuscar.Text);
+            ListView1.DataBind();
+        }
     }
 }
