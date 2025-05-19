@@ -13,6 +13,12 @@
         .auto-style2 {
             width: 371px;
         }
+        .auto-style3 {
+            width: 343px;
+        }
+        .auto-style4 {
+            width: 295px;
+        }
     </style>
 </head>
 <body>
@@ -20,17 +26,65 @@
         <div>
             <table class="auto-style1">
                 <tr>
-                    <td class="auto-style2">
+                    <td colspan="2">
+                        <table class="auto-style1">
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td class="auto-style4">&nbsp;</td>
+                                <td class="auto-style3">&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td class="auto-style4">
+                                    <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Size="20pt" Text="Listado de sucursales"></asp:Label>
+                                </td>
+                                <td class="auto-style3">&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td class="auto-style4">&nbsp;</td>
+                                <td class="auto-style3">&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td class="auto-style4">
+                                    <asp:Label ID="Label2" runat="server" Text="Busqueda por nombre de sucursal:"></asp:Label>
+                                </td>
+                                <td class="auto-style3">
                         <asp:TextBox ID="txtBoxBuscar" runat="server" Width="344px"></asp:TextBox>
-                    </td>
-                    <td>
+                                </td>
+                                <td>
                         <asp:Button ID="btnBuscar" runat="server" OnClick="btnBuscar_Click" Text="Buscar" />
-                    </td>
-                </tr>
-            </table>
-</div>
+                                </td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <asp:DataList ID="DataList1" runat="server" DataKeyField="Id_Provincia" DataSourceID="SqlDataSource2">
+                                        <ItemTemplate>
+                                            &nbsp;<asp:Button ID="Button1" runat="server" CommandName ="filtradoPorProvincia" CommandArgument='<%# Eval("Id_Provincia") %>' Text='<%# Bind("DescripcionProvincia") %>' Font-Size="15pt" OnCommand="Button1_Command" Width="161px" />
+                                            <br />
+                                            <br />
+                                        </ItemTemplate>
+                                    </asp:DataList>
+                                </td>
+                                <td colspan="3">
         <asp:ListView ID="ListView1" runat="server" DataKeyNames="Id_Sucursal" DataSourceID="SqlDataSource1" GroupItemCount="3" style="height: 250px; width: 322px">
-            <AlternatingItemTemplate>
+            <%--<AlternatingItemTemplate>
                 <td runat="server" style="background-color:#FFF8DC;">
                     <asp:Label ID="Id_SucursalLabel" runat="server" Text='<%# Eval("Id_Sucursal") %>' Visible="false" />
                     <asp:Label ID="NombreSucursalLabel" runat="server" Text='<%# Eval("NombreSucursal") %>' />
@@ -42,7 +96,7 @@
                     <asp:Button ID="seleccionarbtn" runat="server" Text="Seleccionar" OnClick="btnSeleccionar_Click" />
                     <br />
                 </td>
-            </AlternatingItemTemplate>
+            </AlternatingItemTemplate>--%>
             <EditItemTemplate>
                 <td runat="server" style="background-color:#008A8C;color: #FFFFFF;">Id_Sucursal:
                     <asp:Label ID="Id_SucursalLabel1" runat="server" Text='<%# Eval("Id_Sucursal") %>' />
@@ -133,7 +187,42 @@
                     <br /></td>
             </SelectedItemTemplate>
         </asp:ListView>
+                                </td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td class="auto-style4">&nbsp;</td>
+                                <td class="auto-style3">&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td class="auto-style4">&nbsp;</td>
+                                <td class="auto-style3">&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+            </table>
+</div>
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConexionSucursales %>" SelectCommand="SELECT [Id_Sucursal], [NombreSucursal], [DescripcionSucursal], [URL_Imagen_Sucursal] FROM [Sucursal]"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConexionSucursales %>" SelectCommand="SELECT [Id_Provincia], [DescripcionProvincia] FROM [Provincia]"></asp:SqlDataSource>
         <br />
         <asp:Label ID="lblMensaje" runat="server" ForeColor="Green"></asp:Label>
     </form>

@@ -11,7 +11,15 @@ namespace TP7_Grupo6_
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (IsPostBack)
+            {
+                if(Session["FiltroProvincia"] != null)
+                {
+                    int idProvincia = (int)Session["FiltroProvincia"];
+                    GestionSucursal gestion = new GestionSucursal();
+                    gestion.buscarSucursalPorProvincia(SqlDataSource1, idProvincia);
+                }
+            }
         }
 
         protected void btnSeleccionar_Click(object sender, EventArgs e)
@@ -32,6 +40,7 @@ namespace TP7_Grupo6_
 
         protected void btnBuscar_Click(object sender, EventArgs e)
         {
+            Session["FiltroProvincia"] = null;
             GestionSucursal gestion = new GestionSucursal();
             if(txtBoxBuscar.Text.Trim() == string.Empty)
             {
@@ -41,6 +50,22 @@ namespace TP7_Grupo6_
             }
             gestion.BuscarSucursal(SqlDataSource1, txtBoxBuscar.Text);
             ListView1.DataBind();
+        }
+
+        protected void Button1_Command(object sender, CommandEventArgs e)
+        {
+            if(e.CommandName == "filtradoPorProvincia")
+            {
+                if(int.TryParse(e.CommandArgument.ToString(),out int idProvincia))
+                {
+                    GestionSucursal gestion = new GestionSucursal();
+                    gestion.buscarSucursalPorProvincia(SqlDataSource1, idProvincia);
+                    ListView1.DataBind();
+                    Session["FiltroProvincia"] = idProvincia;
+
+                }
+
+            }
         }
     }
 }
