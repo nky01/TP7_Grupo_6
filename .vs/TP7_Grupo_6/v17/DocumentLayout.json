@@ -1,14 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Elvis\\OneDrive - frgp.utn.edu.ar\\Desktop\\Escritorio\\TP7_Grupo_6\\",
+  "WorkspaceRootPath": "C:\\Users\\alten\\Documents\\UTN\\Programacion 3 C#\\TP7_Grupo_6\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4DFD5D2B-9603-4564-8C88-DEC4E2DE8D6D}|TP7_Grupo6_\\TP7_Grupo_6.csproj|c:\\users\\elvis\\onedrive - frgp.utn.edu.ar\\desktop\\escritorio\\tp7_grupo_6\\tp7_grupo6_\\seleccionarsucursales.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4DFD5D2B-9603-4564-8C88-DEC4E2DE8D6D}|TP7_Grupo6_\\TP7_Grupo_6.csproj|C:\\Users\\alten\\Documents\\UTN\\Programacion 3 C#\\TP7_Grupo_6\\tp7_grupo6_\\seleccionarsucursales.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{4DFD5D2B-9603-4564-8C88-DEC4E2DE8D6D}|TP7_Grupo6_\\TP7_Grupo_6.csproj|solutionrelative:tp7_grupo6_\\seleccionarsucursales.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DFD5D2B-9603-4564-8C88-DEC4E2DE8D6D}|TP7_Grupo6_\\TP7_Grupo_6.csproj|c:\\users\\alten\\documents\\utn\\programacion 3 c#\\tp7_grupo_6\\tp7_grupo6_\\gestionsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DFD5D2B-9603-4564-8C88-DEC4E2DE8D6D}|TP7_Grupo6_\\TP7_Grupo_6.csproj|solutionrelative:tp7_grupo6_\\gestionsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DFD5D2B-9603-4564-8C88-DEC4E2DE8D6D}|TP7_Grupo6_\\TP7_Grupo_6.csproj|c:\\users\\alten\\documents\\utn\\programacion 3 c#\\tp7_grupo_6\\tp7_grupo6_\\listadosucursalesseleccionados.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DFD5D2B-9603-4564-8C88-DEC4E2DE8D6D}|TP7_Grupo6_\\TP7_Grupo_6.csproj|solutionrelative:tp7_grupo6_\\listadosucursalesseleccionados.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DFD5D2B-9603-4564-8C88-DEC4E2DE8D6D}|TP7_Grupo6_\\TP7_Grupo_6.csproj|c:\\users\\alten\\documents\\utn\\programacion 3 c#\\tp7_grupo_6\\tp7_grupo6_\\seleccionarsucursales.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4DFD5D2B-9603-4564-8C88-DEC4E2DE8D6D}|TP7_Grupo6_\\TP7_Grupo_6.csproj|solutionrelative:tp7_grupo6_\\seleccionarsucursales.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DFD5D2B-9603-4564-8C88-DEC4E2DE8D6D}|TP7_Grupo6_\\TP7_Grupo_6.csproj|C:\\Users\\Elvis\\OneDrive - frgp.utn.edu.ar\\Desktop\\Escritorio\\TP7_Grupo_6\\tp7_grupo6_\\seleccionarsucursales.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{4DFD5D2B-9603-4564-8C88-DEC4E2DE8D6D}|TP7_Grupo6_\\TP7_Grupo_6.csproj|solutionrelative:tp7_grupo6_\\seleccionarsucursales.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{4DFD5D2B-9603-4564-8C88-DEC4E2DE8D6D}|TP7_Grupo6_\\TP7_Grupo_6.csproj|c:\\users\\alten\\documents\\utn\\programacion 3 c#\\tp7_grupo_6\\tp7_grupo6_\\listadosucursalesseleccionados.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{4DFD5D2B-9603-4564-8C88-DEC4E2DE8D6D}|TP7_Grupo6_\\TP7_Grupo_6.csproj|solutionrelative:tp7_grupo6_\\listadosucursalesseleccionados.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DFD5D2B-9603-4564-8C88-DEC4E2DE8D6D}|TP7_Grupo6_\\TP7_Grupo_6.csproj|c:\\users\\alten\\documents\\utn\\programacion 3 c#\\tp7_grupo_6\\tp7_grupo6_\\gestionsucursal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DFD5D2B-9603-4564-8C88-DEC4E2DE8D6D}|TP7_Grupo6_\\TP7_Grupo_6.csproj|solutionrelative:tp7_grupo6_\\gestionsucursal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,28 +42,80 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "ListadoSucursalesSeleccionados.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\alten\\Documents\\UTN\\Programacion 3 C#\\TP7_Grupo_6\\TP7_Grupo6_\\ListadoSucursalesSeleccionados.aspx.cs",
+              "RelativeDocumentMoniker": "TP7_Grupo6_\\ListadoSucursalesSeleccionados.aspx.cs",
+              "ToolTip": "C:\\Users\\alten\\Documents\\UTN\\Programacion 3 C#\\TP7_Grupo_6\\TP7_Grupo6_\\ListadoSucursalesSeleccionados.aspx.cs",
+              "RelativeToolTip": "TP7_Grupo6_\\ListadoSucursalesSeleccionados.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T22:32:28.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GestionSession.cs",
+              "DocumentMoniker": "C:\\Users\\alten\\Documents\\UTN\\Programacion 3 C#\\TP7_Grupo_6\\TP7_Grupo6_\\GestionSession.cs",
+              "RelativeDocumentMoniker": "TP7_Grupo6_\\GestionSession.cs",
+              "ToolTip": "C:\\Users\\alten\\Documents\\UTN\\Programacion 3 C#\\TP7_Grupo_6\\TP7_Grupo6_\\GestionSession.cs",
+              "RelativeToolTip": "TP7_Grupo6_\\GestionSession.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAxwAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T21:58:24.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "SeleccionarSucursales.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\Elvis\\OneDrive - frgp.utn.edu.ar\\Desktop\\Escritorio\\TP7_Grupo_6\\TP7_Grupo6_\\SeleccionarSucursales.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\alten\\Documents\\UTN\\Programacion 3 C#\\TP7_Grupo_6\\TP7_Grupo6_\\SeleccionarSucursales.aspx.cs",
               "RelativeDocumentMoniker": "TP7_Grupo6_\\SeleccionarSucursales.aspx.cs",
-              "ToolTip": "C:\\Users\\Elvis\\OneDrive - frgp.utn.edu.ar\\Desktop\\Escritorio\\TP7_Grupo_6\\TP7_Grupo6_\\SeleccionarSucursales.aspx.cs",
+              "ToolTip": "C:\\Users\\alten\\Documents\\UTN\\Programacion 3 C#\\TP7_Grupo_6\\TP7_Grupo6_\\SeleccionarSucursales.aspx.cs",
               "RelativeToolTip": "TP7_Grupo6_\\SeleccionarSucursales.aspx.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAcwCkAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-17T21:41:29.077Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "SeleccionarSucursales.aspx",
-              "DocumentMoniker": "C:\\Users\\Elvis\\OneDrive - frgp.utn.edu.ar\\Desktop\\Escritorio\\TP7_Grupo_6\\TP7_Grupo6_\\SeleccionarSucursales.aspx",
+              "DocumentMoniker": "C:\\Users\\alten\\Documents\\UTN\\Programacion 3 C#\\TP7_Grupo_6\\TP7_Grupo6_\\SeleccionarSucursales.aspx",
               "RelativeDocumentMoniker": "TP7_Grupo6_\\SeleccionarSucursales.aspx",
-              "ToolTip": "C:\\Users\\Elvis\\OneDrive - frgp.utn.edu.ar\\Desktop\\Escritorio\\TP7_Grupo_6\\TP7_Grupo6_\\SeleccionarSucursales.aspx",
+              "ToolTip": "C:\\Users\\alten\\Documents\\UTN\\Programacion 3 C#\\TP7_Grupo_6\\TP7_Grupo6_\\SeleccionarSucursales.aspx",
               "RelativeToolTip": "TP7_Grupo6_\\SeleccionarSucursales.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
               "WhenOpened": "2025-05-17T21:39:08.013Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ListadoSucursalesSeleccionados.aspx",
+              "DocumentMoniker": "C:\\Users\\alten\\Documents\\UTN\\Programacion 3 C#\\TP7_Grupo_6\\TP7_Grupo6_\\ListadoSucursalesSeleccionados.aspx",
+              "RelativeDocumentMoniker": "TP7_Grupo6_\\ListadoSucursalesSeleccionados.aspx",
+              "ToolTip": "C:\\Users\\alten\\Documents\\UTN\\Programacion 3 C#\\TP7_Grupo_6\\TP7_Grupo6_\\ListadoSucursalesSeleccionados.aspx",
+              "RelativeToolTip": "TP7_Grupo6_\\ListadoSucursalesSeleccionados.aspx",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-05-20T22:10:59.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GestionSucursal.cs",
+              "DocumentMoniker": "C:\\Users\\alten\\Documents\\UTN\\Programacion 3 C#\\TP7_Grupo_6\\TP7_Grupo6_\\GestionSucursal.cs",
+              "RelativeDocumentMoniker": "TP7_Grupo6_\\GestionSucursal.cs",
+              "ToolTip": "C:\\Users\\alten\\Documents\\UTN\\Programacion 3 C#\\TP7_Grupo_6\\TP7_Grupo6_\\GestionSucursal.cs",
+              "RelativeToolTip": "TP7_Grupo6_\\GestionSucursal.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T21:58:57.722Z",
               "EditorCaption": ""
             }
           ]

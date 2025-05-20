@@ -23,25 +23,14 @@ namespace TP7_Grupo6_
             }
         }
 
-        private DataTable CrearTabla()
-        {
-            DataTable dataTable = new DataTable();
-            DataColumn dataColumn = new DataColumn("ID_SUCURSAL", System.Type.GetType("System.Int32"));
-            dataTable.Columns.Add(dataColumn);
-            dataColumn = new DataColumn("NOMBRE", System.Type.GetType("System.String"));
-            dataTable.Columns.Add(dataColumn);
-            dataColumn = new DataColumn("DESCRIPCION", System.Type.GetType("System.String"));
-            dataTable.Columns.Add(dataColumn);
-            return dataTable;
-        }
-
         protected void btnSeleccionar_Click(object sender, EventArgs e)
         {
+            GestionSession gestionSession = new GestionSession();
+
             if (Session["Tabla"] == null)
             {
-                Session["Tabla"] = CrearTabla();
+                Session["Tabla"] = gestionSession.CrearTabla();
             }
-            DataTable table = (DataTable)Session["Tabla"];
 
             Button btn = (Button)sender;
 
@@ -51,13 +40,7 @@ namespace TP7_Grupo6_
             string nombreSucursal = ((Label)item.FindControl("NombreSucursalLabel")).Text;
             string descripcionSucursal = ((Label)item.FindControl("DescripcionSucursalLabel")).Text;
 
-            DataRow row = table.NewRow();
-            row["ID_SUCURSAL"] = int.Parse(idSucursal);
-            row["NOMBRE"] = nombreSucursal;
-            row["DESCRIPCION"] = descripcionSucursal;
-
-            table.Rows.Add(row);
-            Session["Tabla"] = table;
+            gestionSession.AgregarFila((DataTable)Session["Tabla"], idSucursal, nombreSucursal, descripcionSucursal);
 
             lblMensaje.Text = "La sucursal fue seleccionada y guardada";
         }

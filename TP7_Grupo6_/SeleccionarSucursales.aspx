@@ -29,8 +29,12 @@
                     <td colspan="2">
                         <table class="auto-style1">
                             <tr>
-                                <td>&nbsp;</td>
-                                <td class="auto-style4">&nbsp;</td>
+                                <td>
+                                    <asp:HyperLink ID="hyperlinkSeleccionar" runat="server" NavigateUrl="~/SeleccionarSucursales.aspx">Listado de Sucursales</asp:HyperLink>
+                                </td>
+                                <td class="auto-style4">
+                                    <asp:HyperLink ID="hyperlinkMostrar" runat="server" NavigateUrl="~/ListadoSucursalesSeleccionados.aspx">Mostrar sucursales seleccionadas</asp:HyperLink>
+                                </td>
                                 <td class="auto-style3">&nbsp;</td>
                                 <td>&nbsp;</td>
                                 <td>&nbsp;</td>
