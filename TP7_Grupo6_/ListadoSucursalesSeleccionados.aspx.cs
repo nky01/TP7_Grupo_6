@@ -13,10 +13,17 @@ namespace TP7_Grupo6_
 		protected void Page_Load(object sender, EventArgs e)
 		{
 			if (!IsPostBack)
-			{
-				DataTable source = (DataTable)Session["Tabla"];
-				gridviewSeleccionadas.DataSource = source;
-				gridviewSeleccionadas.DataBind();
+			{ if  (Session["Tabla"] == null)
+                {
+					lblMensaje.Text = "No hay sucursales seleccionadas";
+                }
+                else
+                {
+					DataTable source = (DataTable)Session["Tabla"];
+					gridviewSeleccionadas.DataSource = source;
+					gridviewSeleccionadas.DataBind();
+				}
+				
 
 			}
 		}

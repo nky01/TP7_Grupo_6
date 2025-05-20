@@ -17,6 +17,7 @@
             <asp:Label ID="labelListado" runat="server" Font-Bold="True" Font-Size="25pt" Text="Mostrar sucursales seleccionadas"></asp:Label>
             <br />
             <br />
+            <asp:Label ID="lblMensaje" runat="server" ForeColor="Red"></asp:Label>
             <br />
             <asp:GridView ID="gridviewSeleccionadas" runat="server" AutoGenerateColumns="False">
                 <Columns>

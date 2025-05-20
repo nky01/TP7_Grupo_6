@@ -55,7 +55,9 @@
                             <tr>
                                 <td>&nbsp;</td>
                                 <td class="auto-style4">&nbsp;</td>
-                                <td class="auto-style3">&nbsp;</td>
+                                <td class="auto-style3">
+                                    <asp:RegularExpressionValidator ID="RevBuscar" runat="server" ControlToValidate="txtBoxBuscar" ErrorMessage="Sólo se permiten letras, números y espacios." ForeColor="Red" ValidationExpression="&quot;^[a-zA-Z0-9\s]*$&quot;"></asp:RegularExpressionValidator>
+                                </td>
                                 <td>&nbsp;</td>
                                 <td>&nbsp;</td>
                                 <td>&nbsp;</td>
