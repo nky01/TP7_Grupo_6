@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -13,7 +14,7 @@ namespace TP7_Grupo6_
         {
             if (IsPostBack)
             {
-                if(Session["FiltroProvincia"] != null)
+                if (Session["FiltroProvincia"] != null)
                 {
                     int idProvincia = (int)Session["FiltroProvincia"];
                     GestionSucursal gestion = new GestionSucursal();
@@ -22,22 +23,44 @@ namespace TP7_Grupo6_
             }
         }
 
+        private DataTable CrearTabla()
+        {
+            DataTable dataTable = new DataTable();
+            DataColumn dataColumn = new DataColumn("ID_SUCURSAL", System.Type.GetType("System.Int32"));
+            dataTable.Columns.Add(dataColumn);
+            dataColumn = new DataColumn("NOMBRE", System.Type.GetType("System.String"));
+            dataTable.Columns.Add(dataColumn);
+            dataColumn = new DataColumn("DESCRIPCION", System.Type.GetType("System.String"));
+            dataTable.Columns.Add(dataColumn);
+            return dataTable;
+        }
+
         protected void btnSeleccionar_Click(object sender, EventArgs e)
         {
+            if (Session["Tabla"] == null)
+            {
+                Session["Tabla"] = CrearTabla();
+            }
+            DataTable table = (DataTable)Session["Tabla"];
+
             Button btn = (Button)sender;
+
             ListViewItem item = (ListViewItem)btn.NamingContainer;
 
             string idSucursal = ((Label)item.FindControl("Id_SucursalLabel")).Text;
-            string nombre = ((Label)item.FindControl("NombreSucursalLabel")).Text;
-            string descripcion = ((Label)item.FindControl("DescripcionSucursalLabel")).Text;
+            string nombreSucursal = ((Label)item.FindControl("NombreSucursalLabel")).Text;
+            string descripcionSucursal = ((Label)item.FindControl("DescripcionSucursalLabel")).Text;
 
-            Session["ID_SUCURSAL"] = idSucursal;
-            Session["NOMBRE"] = nombre;
-            Session["DESCRIPCION"] = descripcion;
+            DataRow row = table.NewRow();
+            row["ID_SUCURSAL"] = int.Parse(idSucursal);
+            row["NOMBRE"] = nombreSucursal;
+            row["DESCRIPCION"] = descripcionSucursal;
 
-            lblMensaje.Text = "Sucursal seleccionada: ID: " + idSucursal + ", Nombre: " + nombre + ", Descripcion: " + descripcion;
+            table.Rows.Add(row);
+            Session["Tabla"] = table;
+
+            lblMensaje.Text = "La sucursal fue seleccionada y guardada";
         }
-
         protected void btnBuscar_Click(object sender, EventArgs e)
         {
             Session["FiltroProvincia"] = null;
