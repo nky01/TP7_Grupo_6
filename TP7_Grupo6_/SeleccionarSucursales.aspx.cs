@@ -33,7 +33,6 @@ namespace TP7_Grupo6_
             }
 
             Button btn = (Button)sender;
-
             ListViewItem item = (ListViewItem)btn.NamingContainer;
 
             string idSucursal = ((Label)item.FindControl("Id_SucursalLabel")).Text;
@@ -41,7 +40,6 @@ namespace TP7_Grupo6_
             string descripcionSucursal = ((Label)item.FindControl("DescripcionSucursalLabel")).Text;
 
             gestionSession.AgregarFila((DataTable)Session["Tabla"], idSucursal, nombreSucursal, descripcionSucursal);
-
             lblMensaje.Text = "La sucursal fue seleccionada y guardada";
         }
         protected void btnBuscar_Click(object sender, EventArgs e)
@@ -68,9 +66,7 @@ namespace TP7_Grupo6_
                     gestion.buscarSucursalPorProvincia(SqlDataSource1, idProvincia);
                     ListView1.DataBind();
                     Session["FiltroProvincia"] = idProvincia;
-
                 }
-
             }
         }
     }
