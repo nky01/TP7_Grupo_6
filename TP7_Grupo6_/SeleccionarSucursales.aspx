@@ -19,6 +19,17 @@
         .auto-style4 {
             width: 295px;
         }
+        .auto-style5 {
+            height: 53px;
+        }
+        .auto-style6 {
+            width: 295px;
+            height: 53px;
+        }
+        .auto-style7 {
+            width: 343px;
+            height: 53px;
+        }
     </style>
 </head>
 <body>
@@ -33,9 +44,10 @@
                                     <asp:HyperLink ID="hyperlinkSeleccionar" runat="server" NavigateUrl="~/SeleccionarSucursales.aspx">Listado de Sucursales</asp:HyperLink>
                                 </td>
                                 <td class="auto-style4">
+                                    &nbsp;</td>
+                                <td class="auto-style3">
                                     <asp:HyperLink ID="hyperlinkMostrar" runat="server" NavigateUrl="~/ListadoSucursalesSeleccionados.aspx">Mostrar sucursales seleccionadas</asp:HyperLink>
                                 </td>
-                                <td class="auto-style3">&nbsp;</td>
                                 <td>&nbsp;</td>
                                 <td>&nbsp;</td>
                                 <td>&nbsp;</td>
@@ -77,6 +89,19 @@
                                 <td>&nbsp;</td>
                                 <td>&nbsp;</td>
                                 <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style5"></td>
+                                <td class="auto-style6">
+        <asp:Label ID="lblMensaje" runat="server" ForeColor="Green"></asp:Label>
+                                </td>
+                                <td class="auto-style7">
+                                </td>
+                                <td class="auto-style5">
+                                </td>
+                                <td class="auto-style5"></td>
+                                <td class="auto-style5"></td>
+                                <td class="auto-style5"></td>
                             </tr>
                             <tr>
                                 <td>
@@ -230,7 +255,6 @@
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConexionSucursales %>" SelectCommand="SELECT [Id_Sucursal], [NombreSucursal], [DescripcionSucursal], [URL_Imagen_Sucursal] FROM [Sucursal]"></asp:SqlDataSource>
         <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConexionSucursales %>" SelectCommand="SELECT [Id_Provincia], [DescripcionProvincia] FROM [Provincia]"></asp:SqlDataSource>
         <br />
-        <asp:Label ID="lblMensaje" runat="server" ForeColor="Green"></asp:Label>
     </form>
 </body>
 </html>
