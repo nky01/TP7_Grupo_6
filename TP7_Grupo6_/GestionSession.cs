@@ -22,13 +22,26 @@ namespace TP7_Grupo6_
             return dataTable;
         }
 
-        public DataTable AgregarFila(DataTable data, string id, string nombre, string descripcion)
+        public DataTable AgregarFila(DataTable data, string id, string nombre, string descripcion, Label lblMensaje)
         {
+            
+            foreach(DataRow Row in data.Rows)
+            {
+                if (Convert.ToInt32(Row["ID_SUCURSAL"]) == Convert.ToInt32(id))
+                {
+                    lblMensaje.Text = "Esta sucursal ya fue seleccionada!";
+                    lblMensaje.ForeColor = System.Drawing.Color.Red;
+                    return data;
+                }
+            }
+
             DataRow row = data.NewRow();
             row["ID_SUCURSAL"] = int.Parse(id);
             row["NOMBRE"] = nombre;
             row["DESCRIPCION"] = descripcion;
             data.Rows.Add(row);
+            lblMensaje.Text = "La sucursal fue seleccionada y guardada";
+            lblMensaje.ForeColor = System.Drawing.Color.Green;
             return data;
         }
 

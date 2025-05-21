@@ -39,8 +39,8 @@ namespace TP7_Grupo6_
             string nombreSucursal = ((Label)item.FindControl("NombreSucursalLabel")).Text;
             string descripcionSucursal = ((Label)item.FindControl("DescripcionSucursalLabel")).Text;
 
-            gestionSession.AgregarFila((DataTable)Session["Tabla"], idSucursal, nombreSucursal, descripcionSucursal);
-            lblMensaje.Text = "La sucursal fue seleccionada y guardada";
+
+            gestionSession.AgregarFila((DataTable)Session["Tabla"], idSucursal, nombreSucursal, descripcionSucursal,lblMensaje);
         }
         protected void btnBuscar_Click(object sender, EventArgs e)
         {
